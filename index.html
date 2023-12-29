@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>T-Shirt combinator</title><style>canvas {
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>T-Shirt combinator</title><meta name="viewport" content="width=device-width,initial-scale=1"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><style>canvas {
       border: 1px solid black;
     }
     .flex-container {
@@ -6,13 +6,18 @@
       flex-direction: row;
       justify-content: center;
     }
+    .text-block {
+      border: 1px solid black;
+      padding: 0.25em;
+    }
     .text-variant-block {
       display: flex;
       flex-direction: column;
+      margin-bottom: 1em;
     }
     #text-controllers {
       padding: 0.5em;
     }
     #background-controller {
       padding: 0.5em;
-    }</style><script defer="defer" src="app.js"></script></head><body><div class="flex-container"><div id="text-controllers"></div><div><p><button id="add-text">Add text</button> <label for="text-count">Text count:</label> <input type="number" id="text-count" value="3"/></p><button id="download-current-button">Download current version (t-shirt)</button> <button id="download-all-button">Download all variations (t-shirt)</button><canvas id="canvas" width="450" height="540"></canvas></div><div id="background-controller"><button id="add-background">Add background</button><button id="cycle-background">Cycle background</button></div></div></body></html>
+    }</style><script defer="defer" src="app.js"></script></head><body><div class="flex-container"><div id="text-controllers"></div><div><p><label class="form-label" for="text-count">Text count:</label> <input class="form-control" type="number" id="text-count" value="3"/> <button id="add-text" class="btn btn-outline-primary btn-sm">Add text</button></p><button id="download-current-button" class="btn btn-info btn-sm">Download current version (t-shirt)</button> <button id="download-all-button" class="btn btn-success btn-sm">Download all variations (t-shirt)</button><canvas id="canvas" width="450" height="540"></canvas></div><div id="background-controller"><button id="add-background">Add background</button><button id="cycle-background">Cycle background</button></div></div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script></body></html>
